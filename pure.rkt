@@ -11,6 +11,7 @@
   if
   cond
   case
+  else
   list list*
   < > = <= >=
   even? odd?
