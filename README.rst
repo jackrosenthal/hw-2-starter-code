@@ -57,13 +57,14 @@ entering expressions into the REPL at the bottom.
 If you are using Racket from another editor, type "racket" at your terminal to
 get a REPL. You can enter into your code using the following command::
 
-   (enter! "hw-2.rkt")
+   ,en hw-2.rkt
 
-Run any commands you need. To reload, you can type the same ``enter!`` command
+Run any commands you need. To reload, you can type the same ``,en`` command
 again.
 
 Note: the grader will run additional test cases from the ones you were given.
-Please be sure to test all of your code.
+Please be sure to test all of your code. Create additional test cases to the
+ones you were given.
 
 Submitting your Code
 --------------------

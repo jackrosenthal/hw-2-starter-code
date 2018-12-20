@@ -30,13 +30,8 @@
   #%top-interaction
   #%datum)
 
-(define-struct (exn:fail:not-implemented exn:fail) ())
-
 (define-syntax-rule (todo)
-  (raise (make-exn:fail:not-implemented
-           (string-append
-             "Not implemented: "
-             (symbol->string (caar
-                               (continuation-mark-set->context
-                                 (current-continuation-marks)))))
-           (current-continuation-marks))))
+  (error
+    (caar (continuation-mark-set->context
+            (current-continuation-marks)))
+    "not implemented"))
